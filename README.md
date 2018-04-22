@@ -31,7 +31,7 @@
     2. Type in a random password
     3. Teep submitting the wrong password multiple times until the "failed logins" message shows up
   * **GIF walkthrough:**
-    * ![usernameenum](https://user-images.githubusercontent.com/31838335/39099064-ef761ec8-4641-11e8-8094-556642464fc3.gif) <br />
+    * ![usernameenum](https://user-images.githubusercontent.com/31838335/39099064-ef761ec8-4641-11e8-8094-556642464fc3.gif)
 **Vulnerability 2:** Cross-Site Scripting
   * **Steps:**
     1. Go to Contact
@@ -49,8 +49,7 @@
 
 ## ** Bonus Objective 1: **
   * **Steps:**
-    1. 
-    2. 
-    3. 
+    1. Since we know the name of the database we can use sqlmap to retrieve all information in the database
+    2. Sample code: 'sqlmap -u "https://35.184.168.159/blue/public/salesperson.php?id=1" -D globitek_blue'
   * **GIF walkthrough:**
-    * 
+    * ![bonus](https://user-images.githubusercontent.com/31838335/39099232-0afc4502-4645-11e8-90de-94fda8d999ae.gif)
