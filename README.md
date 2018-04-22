@@ -31,8 +31,8 @@ Vulnerability #1: **Username Enumeration**
     3. Teep submitting the wrong password multiple times until the "failed logins" message shows up
   * **GIF walkthrough:**
     * ![usernameenum](https://user-images.githubusercontent.com/31838335/39099064-ef761ec8-4641-11e8-8094-556642464fc3.gif)
-    <br></br>
-**Vulnerability #2: **Cross-Site Scripting**
+
+Vulnerability #2: **Cross-Site Scripting**
   * **Steps:**
     1. Go to Contact
     2. Submit a feedback with malicious code: <script>alert('xss')</script>
@@ -53,3 +53,8 @@ Vulnerability #1: **Insecure Direct Object Reference**
     2. Sample code: 'sqlmap -u "https://35.184.168.159/blue/public/salesperson.php?id=1" -D globitek_blue'
   * **GIF walkthrough:**
     * ![bonus](https://user-images.githubusercontent.com/31838335/39099232-0afc4502-4645-11e8-90de-94fda8d999ae.gif)
+
+
+## Notes
+
+Describe any challenges encountered while doing the work
