@@ -1,22 +1,21 @@
-# Cybersecurity_week8
+# Project 8 - Pentesting Live Targets
 
-## Six possible vulnerabilities:
-- [x] Username Enumeration
-- [x] Insecure Direct Object Reference
-- [x] SQL Injection
-- [x] Cross-Site Scripting
-- [ ] Cross-Site Request Forgery
-- [ ] Session Hijacking/Fixation
-## Vulnerabilities I found and exploited:
-- [x] Username Enumeration
-- [x] Insecure Direct Object Reference
-- [x] SQL Injection
-- [x] Cross-Site Scripting
-- [x] Bonus Objective 1:
-  * Build on the SQL Injection vulnerbility. Experiment to see what other kinds of information one can get the database to reveal.
-  
-## **Blue** version of Globitek website 
-**Vulnerability 1:** SQL Injection
+Time spent: **8** hours spent in total
+
+> Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
+
+The six possible exploits are:
+* Username Enumeration
+* Insecure Direct Object Reference (IDOR)
+* SQL Injection (SQLi)
+* Cross-Site Scripting (XSS)
+* Cross-Site Request Forgery (CSRF)
+* Session Hijacking/Fixation
+
+Each version of the site has been given two of the six vulnerabilities. (In other words, all six of the exploits should be assignable to one of the sites.)
+
+## Blue
+Vulnerability #1: **SQL Injection**
   * **Steps:**
     1. Use command: 'sqlmap -u "https://35.184.168.159/blue/public/salesperson.php?id=1" --current-db' to retrieve the database the website is currently using (which is "globitek_blue")
     2. Use command: 'sqlmap -u "https://35.184.168.159/blue/public/salesperson.php?id=1" -D globitek_blue --tables' to retrieve all of the tables that is in the database
@@ -24,8 +23,8 @@
   * **GIF walkthrough:**
     * ![sqli](https://user-images.githubusercontent.com/31838335/39098942-fed0c51e-463f-11e8-82c4-e410750e79d1.gif)
     
-## **Green** version of Globitek website 
-**Vulnerability 1:** Username Enumeration
+## Green
+Vulnerability #1: **Username Enumeration**
   * **Steps:**
     1. Type in username
     2. Type in a random password
@@ -33,7 +32,7 @@
   * **GIF walkthrough:**
     * ![usernameenum](https://user-images.githubusercontent.com/31838335/39099064-ef761ec8-4641-11e8-8094-556642464fc3.gif)
     <br></br>
-**Vulnerability 2:** Cross-Site Scripting
+**Vulnerability #2: **Cross-Site Scripting**
   * **Steps:**
     1. Go to Contact
     2. Submit a feedback with malicious code: <script>alert('xss')</script>
@@ -41,7 +40,7 @@
     * ![xss](https://user-images.githubusercontent.com/31838335/39099083-3bf6dbde-4642-11e8-9e3f-1f8d585dd0d9.gif)
 
 ## **Red** version of Globitek website 
-**Vulnerability 1:** Insecure Direct Object Reference
+Vulnerability #1: **Insecure Direct Object Reference**
   * **Steps:**
     1. Go to https://35.184.168.159/blue/public/salesperson.php?id=1
     2. Change the value of id to 10 or 11 would reveal information that should not be revealed
