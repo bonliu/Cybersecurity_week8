@@ -23,6 +23,10 @@ Vulnerability #1: **SQL Injection**
   * **GIF walkthrough:**
     * ![sqli](https://user-images.githubusercontent.com/31838335/39098942-fed0c51e-463f-11e8-82c4-e410750e79d1.gif)
     
+Vulnerability #2: **Session Hijacking/Fixation**
+  * **GIF walkthrough:**
+    * ![session](https://user-images.githubusercontent.com/31838335/39490768-e5f18d20-4d57-11e8-9bd4-dcf86a85c0c9.gif)
+    
 ## Green
 Vulnerability #1: **Username Enumeration**
   * **Steps:**
@@ -46,7 +50,9 @@ Vulnerability #1: **Insecure Direct Object Reference**
     2. Change the value of id to 10 or 11 would reveal information that should not be revealed
   * **GIF walkthrough:**
     * ![idor](https://user-images.githubusercontent.com/31838335/39099090-56e74dac-4642-11e8-84f7-111537caefb6.gif)
-
+Vulnerability #2: **Cross-Site Request Forgery**
+  * **GIF walkthrough:**
+    * ![crf](https://user-images.githubusercontent.com/31838335/39490692-a1d5aab8-4d57-11e8-8df6-815f79dde384.gif)
 ## **Bonus Objective 1:**
   * **Steps:**
     1. Since we know the name of the database we can use sqlmap to retrieve all information in the database
